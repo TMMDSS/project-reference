@@ -3,6 +3,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Arial Narrow Bold', sans-serif;
 }
 
 #header {
@@ -11,7 +12,7 @@
     align-items: center;
     width: 100%;
     height: 75px;
-    background-color: white;
+    background-color: #eff3f3;
     color: darkcyan;
     border-bottom: 5px solid cyan;
     padding: 0 15px;
@@ -60,28 +61,21 @@
     color: #fff;
     cursor: pointer;
     border: none;
-    background-image: linear-gradient(to left, transparent, black 200%);
+    background-image: linear-gradient(to left, transparent 0%, black 200%);
     opacity: 0.2;
     transition: .2s ease-in-out;
 }
 
 .arrow-right {
-    position: absolute;
     left: auto;
     right: 0;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    background-image: linear-gradient(to right, transparent, black 200%);
+    background-image: linear-gradient(to right, transparent 0%, black 200%);
 }
 
 .arrow-left:hover,
 .arrow-right:hover {
     opacity: 1;
+    background-color: red;
 }
 
 .item {
