@@ -168,31 +168,37 @@
     "article2 aside";
     width: 100%;
     height: auto;
-    padding: 25px;
+    padding: 25px 0px;
     margin: 60px 0px;
     border-top: 2px solid gray;
 }
 
 #lista {
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
     width: 200px;
     height: 750px;
     border-left: 2px solid gray;
     margin: 0 auto;
-    padding: 15px;
-}
-
-#listaLateral {
+    background-color: rgb(243, 238, 238);
     text-align: center;
-    list-style: none;
-    width: 100%;
 }
 
 .unid  {
-    font-size: 24px;
-    color: darkgreen;
+    font-size: 20px;
+    width: 100%;
+    color: black;
     font-family: var(--fontThree);
     text-decoration: none;
+    padding: 10px;
+}
+
+.unid:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0px 0px 2px black;
 }
 
 #artOne {
