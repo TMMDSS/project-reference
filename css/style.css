@@ -29,6 +29,27 @@
     color: black;
     font-size: 24px;
     font-weight: 900;
+    position: relative;
+}
+
+.linkHeader:hover {
+    transform: scale(1.2);
+    transition: .1s ease-in-out;
+}
+
+.linkHeader::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.linkHeader:hover::after {
+    width: 100%;
+    transition: .5s;
 }
 
 #main {
@@ -93,7 +114,13 @@ section.slider{
     background-color: #ff0054;
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #ff0054;
+}
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background-color: #ff0054;
+}
+#radio3:checked ~ .nav-auto .auto-btn3 {
     background-color: #ff0054;
 }
 
