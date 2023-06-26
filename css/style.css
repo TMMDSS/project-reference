@@ -18,11 +18,17 @@
     padding: 0 15px;
 }
 
+#navegação_header {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
 .linkHeader {
     text-decoration: none;
     color: black;
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 #main {
