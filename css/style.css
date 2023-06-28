@@ -243,7 +243,7 @@
     height: auto;
     border-top: 5px solid cyan;
     box-shadow: 0px 1px 15px #00000067;
-    padding: 75px;
+    padding: 75px 75px 0px 75px;
 }
 
 #socialMedia {
@@ -251,13 +251,14 @@
     border-top: 2px solid gray;
     padding: 15px;
     position: relative;
+    margin-bottom: 15px;
 }
 
 #socialWrapper {
     width: 175px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    margin-bottom: 50px;
 }
 
 #socialWrapper::after {
@@ -274,4 +275,33 @@
 .imgFooter {
     width: 45px;
     cursor: pointer;
+}
+
+#divLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    padding: 15px;
+    margin: auto;
+}
+
+.divLinks {
+    text-decoration: none;
+    color: black;
+}
+
+.divLinks:hover {
+    color: gray;
+}
+
+
+#creditsFooter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+#creditsWrapper {
+    color: rgba(0, 0, 0, 0.377);
 }
