@@ -26,8 +26,8 @@ let inst = [...document.querySelectorAll(".imgFooter")]
 inst.map((el, chave) => {
     el.addEventListener("mouseover",() => {
         const entrar = () => {
-            if (el.src.match("img/instagramBlack.png") && chave == 0) {
-                el.src = "img/instagramColor.png"
+            if (el.src.match("img/instagramBlack.webp") && chave == 0) {
+                el.src = "img/instagramColor.webp"
                 console.log("verde")
             }
         }
@@ -37,8 +37,8 @@ inst.map((el, chave) => {
     })
     el.addEventListener("mouseout",() => {
         const sair = () => {
-            if (el.src.match("img/instagramColor.png") && chave ==0) {
-                el.src = "img/instagramBlack.png";
+            if (el.src.match("img/instagramColor.webp") && chave ==0) {
+                el.src = "img/instagramBlack.webp";
                 console.log("vermelho")
             }
         }
@@ -50,8 +50,8 @@ inst.map((el, chave) => {
 
     el.addEventListener("mouseover",() => {
         const entrar = () => {
-            if (el.src.match("img/linkedinBlack.png") && chave == 1) {
-                el.src = "img/linkedinColor.png"
+            if (el.src.match("img/linkedinBlack.webp") && chave == 1) {
+                el.src = "img/linkedinColor.webp"
                 console.log("roxo")
             }
         }
@@ -61,8 +61,8 @@ inst.map((el, chave) => {
     })
     el.addEventListener("mouseout",() => {
         const sair = () => {
-            if (el.src.match("img/linkedinColor.png") && chave ==1) {
-                el.src = "img/linkedinBlack.png";
+            if (el.src.match("img/linkedinColor.webp") && chave ==1) {
+                el.src = "img/linkedinBlack.webp";
                 console.log("rosa")
             }
         }
@@ -74,8 +74,8 @@ inst.map((el, chave) => {
 
     el.addEventListener("mouseover",() => {
         const entrar = () => {
-            if (el.src.match("img/githubWhite.png") && chave == 2) {
-                el.src = "img/githubBlack.png"
+            if (el.src.match("img/githubWhite.webp") && chave == 2) {
+                el.src = "img/githubBlack.webp"
                 console.log("laranja")
             }
         }
@@ -85,8 +85,8 @@ inst.map((el, chave) => {
     })
     el.addEventListener("mouseout",() => {
         const sair = () => {
-            if (el.src.match("img/githubBlack.png") && chave ==2) {
-                el.src = "img/githubWhite.png";
+            if (el.src.match("img/githubBlack.webp") && chave ==2) {
+                el.src = "img/githubWhite.webp";
                 console.log("amarelo")
             }
         }
