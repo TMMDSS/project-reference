@@ -20,13 +20,15 @@ function proximaImg(){
 
 // S O C I A L
 let inst = [...document.querySelectorAll(".imgFooter")]
+
+
+
 inst.map((el, chave) => {
     el.addEventListener("mouseover",() => {
         const entrar = () => {
-            if (el.src.match("img/instagramBlack.png")) {
-            el.src = "img/instagramColor.png";
-            } else {
-            el.src = "img/instagramBlack.png";
+            if (el.src.match("img/instagramBlack.png") && chave == 0) {
+                el.src = "img/instagramColor.png"
+                console.log("verde")
             }
         }
 
@@ -35,10 +37,33 @@ inst.map((el, chave) => {
     })
     el.addEventListener("mouseout",() => {
         const sair = () => {
-            if (el.src.match("img/instagramColor.png")) {
-            el.src = "img/instagramBlack.png";
-            } else {
-            el.src = "img/instagramBlack.png";
+            if (el.src.match("img/instagramColor.png") && chave ==0) {
+                el.src = "img/instagramBlack.png";
+                console.log("vermelho")
+            }
+        }
+
+
+        sair()
+    })
+
+
+    el.addEventListener("mouseover",() => {
+        const entrar = () => {
+            if (el.src.match("img/linkedinBlack.png") && chave == 1) {
+                el.src = "img/linkedinColor.png"
+                console.log("roxo")
+            }
+        }
+
+
+    entrar()
+    })
+    el.addEventListener("mouseout",() => {
+        const sair = () => {
+            if (el.src.match("img/linkedinColor.png") && chave ==1) {
+                el.src = "img/linkedinBlack.png";
+                console.log("rosa")
             }
         }
 
@@ -46,23 +71,27 @@ inst.map((el, chave) => {
         sair()
     })
     
+
+    el.addEventListener("mouseover",() => {
+        const entrar = () => {
+            if (el.src.match("img/githubWhite.png") && chave == 2) {
+                el.src = "img/githubBlack.png"
+                console.log("laranja")
+            }
+        }
+
+
+    entrar()
+    })
+    el.addEventListener("mouseout",() => {
+        const sair = () => {
+            if (el.src.match("img/githubBlack.png") && chave ==2) {
+                el.src = "img/githubWhite.png";
+                console.log("amarelo")
+            }
+        }
+
+
+        sair()
+    })
 })
-
-
-// function entrar() {
-//     var imagem = document.getElementById("logoLaranja");
-//     if (imagem.src.match("imagens/crunchyroll-logo.png")) {
-//       imagem.src = "imagens/crunchyroll-logo-branco.png";
-//     } else {
-//       imagem.src = "imagens/crunchyroll-logo.png";
-//     }
-//   }
-  
-//   function sair() {
-//       var imagem = document.getElementById("logoLaranja");
-//       if (imagem.src.match("imagens/crunchyroll-logo.png")) {
-//         imagem.src = "imagens/crunchyroll-logo-branco.png";
-//       } else {
-//         imagem.src = "imagens/crunchyroll-logo.png";
-//       }
-//     }
