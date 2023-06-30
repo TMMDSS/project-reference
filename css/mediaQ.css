@@ -36,14 +36,14 @@
     
     #artOne {
         grid-area: article;
-        width: 600px;
+        width: 100%;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0 auto;
     }
 
     #artTwo {
         grid-area: article2;
-        width: 600px;
+        width: 100%;
         font-family: Arial, Helvetica, sans-serif;
         margin: 45px auto;
     }
@@ -51,6 +51,15 @@
 }
 
 @media  (max-width: 900px) {
+
+    #navegação_header {
+        display: none;
+    }
+
+    #btnMenu {
+        display: block;
+    }
+
     #secOne {
         display: grid;
         grid-template-areas:
@@ -103,6 +112,13 @@
 }
 
 @media screen and (max-width: 600px){
+
+    #btnMenu {
+        display: block;
+        max-width: 50px;
+        max-height: 50px;
+    }
+
     #secOne {
         display: grid;
         grid-template-areas:
@@ -152,31 +168,10 @@
         margin: 0 auto;
     }
     
-    #artOne h2{
-        font-family: var(--fonteTwo);
-        font-size: 32px;
-    }
-    
-    #artOne p {
-        text-indent: 15px;
-        margin-top: 10px;
-    }
-    
-    
     #artTwo {
         grid-area: article2;
         width: 100%;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0px auto;
-    }
-    
-    #artTwo h2{
-        font-family: var(--fonteTwo);
-        font-size: 32px;
-    }
-    
-    #artTwo p {
-        text-indent: 15px;
-        margin-top: 10px;
     }
 }
