@@ -7,7 +7,7 @@
         "article2" ;
         width: 100%;
         height: auto;
-        padding: 15px 5px;
+        padding: 0px 5px;
         margin: 60px 0px;
         border-top: 2px solid gray;
     }
@@ -59,7 +59,7 @@
         "article2" ;
         width: 100%;
         height: auto;
-        padding: 15px 5px;
+        padding: 0px 5px;
         margin: 60px 0px;
         border-top: 2px solid gray;
     }
@@ -100,4 +100,83 @@
         margin: 45px auto;
     }
 
+}
+
+@media screen and (max-width: 600px){
+    #secOne {
+        display: grid;
+        grid-template-areas:
+        "aside" 
+        "article"
+        "article2";
+        width: 100%;
+        height: auto;
+        padding: 0px 5px;
+        margin: 60px 0px;
+        border-top: 2px solid gray;
+    }
+    
+    #lista {
+        grid-area: aside;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        width: 100%;
+        border-left: 0px solid gray;
+        border-bottom: 2px solid purple;
+        margin: 0 auto;
+        background-color: rgb(243, 238, 238);
+        text-align: center;
+    }
+    
+    .unid  {
+        font-size: 16px;
+        width: 100%;
+        color: black;
+        font-family: var(--fontThree);
+        text-decoration: none;
+        padding: 0px;
+    }
+    
+    .unid:hover {
+        background-color: darkgrey;
+        cursor: pointer;
+        color: white;
+        text-shadow: 0px 0px 2px black;
+    }
+    
+    #artOne {
+        grid-area: article;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+    }
+    
+    #artOne h2{
+        font-family: var(--fonteTwo);
+        font-size: 32px;
+    }
+    
+    #artOne p {
+        text-indent: 15px;
+        margin-top: 10px;
+    }
+    
+    
+    #artTwo {
+        grid-area: article2;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px auto;
+    }
+    
+    #artTwo h2{
+        font-family: var(--fonteTwo);
+        font-size: 32px;
+    }
+    
+    #artTwo p {
+        text-indent: 15px;
+        margin-top: 10px;
+    }
 }
