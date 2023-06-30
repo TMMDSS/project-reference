@@ -95,3 +95,12 @@ inst.map((el, chave) => {
         sair()
     })
 })
+
+// B O T A O  H E A D E R  M E N U
+const btn = document.getElementById('btnMenu')
+
+function animar() {
+    btn.classList.toggle('ativar')
+}
+
+btn.addEventListener('click', animar) 
