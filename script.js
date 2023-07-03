@@ -21,8 +21,6 @@ function proximaImg(){
 // S O C I A L
 let inst = [...document.querySelectorAll(".imgFooter")]
 
-
-
 inst.map((el, chave) => {
     el.addEventListener("mouseover",() => {
         const entrar = () => {
@@ -32,9 +30,9 @@ inst.map((el, chave) => {
             }
         }
 
-
     entrar()
     })
+
     el.addEventListener("mouseout",() => {
         const sair = () => {
             if (el.src.match("img/instagramColor.webp") && chave ==0) {
@@ -42,7 +40,6 @@ inst.map((el, chave) => {
                 console.log("vermelho")
             }
         }
-
 
         sair()
     })
@@ -56,7 +53,6 @@ inst.map((el, chave) => {
             }
         }
 
-
     entrar()
     })
     el.addEventListener("mouseout",() => {
@@ -66,7 +62,6 @@ inst.map((el, chave) => {
                 console.log("rosa")
             }
         }
-
 
         sair()
     })
@@ -80,9 +75,9 @@ inst.map((el, chave) => {
             }
         }
 
-
     entrar()
     })
+
     el.addEventListener("mouseout",() => {
         const sair = () => {
             if (el.src.match("img/githubBlack.webp") && chave ==2) {
@@ -90,7 +85,6 @@ inst.map((el, chave) => {
                 console.log("amarelo")
             }
         }
-
 
         sair()
     })
@@ -104,3 +98,30 @@ function animar() {
 }
 
 btn.addEventListener('click', animar) 
+
+// N A V E G A Ç Ã O
+const nav = document.querySelector("#navegação_header")
+
+let show = false
+const navegação = () => { 
+    show = !show
+
+    if (!show) {
+        nav.style.marginTop = '-100vh'
+    } else {
+        nav.style.marginTop = '0vh'
+    }
+}
+
+btn.addEventListener('click', navegação)
+
+const mudouTamanho = () => {
+    if (window.innerWidth <= 900) {
+        nav.style.marginTop = '-100vh'
+    } else {
+        nav.style.marginTop = '0vh'
+    }
+}
+window.addEventListener("resize", mudouTamanho)
+
+// verificar se o btn esta ativado no resize
