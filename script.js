@@ -110,6 +110,28 @@ inst.map((el, chave) => {
 
         sair()
     })
+
+    el.addEventListener("mouseover",() => {
+        const entrar = () => {
+            if (el.src.match("img/facebookBlack.webp") && chave == 4) {
+                el.src = "img/facebookColor.webp"
+                console.log("pink")
+            }
+        }
+
+    entrar()
+    })
+
+    el.addEventListener("mouseout",() => {
+        const sair = () => {
+            if (el.src.match("img/facebookColor.webp") && chave ==4) {
+                el.src = "img/facebookBlack.webp";
+                console.log("purple")
+            }
+        }
+
+        sair()
+    })
 })
 
 // B O T A O  H E A D E R  M E N U
