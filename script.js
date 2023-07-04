@@ -106,10 +106,10 @@ let show = false
 const navegação = () => { 
     show = !show
 
-    if (!show) {
-        nav.style.marginTop = '-100vh'
+    if (show) {
+        nav.style.marginTop = '13vh'
     } else {
-        nav.style.marginTop = '0vh'
+        nav.style.marginTop = '-100vh'
     }
 }
 

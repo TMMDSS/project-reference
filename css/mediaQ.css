@@ -52,15 +52,29 @@
 
 @media  (max-width: 900px) {
 
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 15px;
+        background-color: var(--cor-1);
+        height: 70px;
+        width: 100%;
+    }
+
     #navegação_header {
         margin-top: -100vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
         display: flex;
         flex-direction: column;
         gap: 0;
         padding: 0;
+        width: 100%;
         transition: .2s;
         z-index: 1;
-        background-color: beige;
+        background-color: beige; 
     }
 
     #btnMenu {
