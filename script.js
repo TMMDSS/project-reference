@@ -136,9 +136,11 @@ inst.map((el, chave) => {
 
 // B O T A O  H E A D E R  M E N U
 const btn = document.getElementById('btnMenu')
+const linha = document.querySelector(".linha")
 
 function animar() {
     btn.classList.toggle('ativar')
+    linha.classList.toggle("anima")
 }
 
 btn.addEventListener('click', animar) 

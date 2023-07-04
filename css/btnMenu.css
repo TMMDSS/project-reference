@@ -19,6 +19,10 @@
     border-radius: 5px;
 }
 
+.anima {
+    animation: animabuttun .3s;
+}
+
 button.ativar .linha:nth-child(1) {
     transform: translateY(8px) rotate(-45deg);
     background-color: black;
@@ -31,4 +35,31 @@ button.ativar .linha:nth-child(3) {
 
 button.ativar .linha:nth-child(2) {
     width: 0;
+}
+
+@keyframes animabuttun {
+    0% {
+            transform: translateY(8px) rotate(45deg);
+            background-color: red;
+        }
+    
+    25% {
+            transform: translateY(8px) rotate(70deg);
+            background-color: cyan;
+    }
+
+    50% {
+            transform: translateY(8px) rotate(95deg);
+            background-color: red;
+    }
+
+    75% {
+            transform: translateY(8px) rotate(45deg);
+            background-color: cyan;
+    }
+
+    100% {
+            transform: translateY(8px) rotate(-45deg);
+            background-color: black;
+    }
 }
