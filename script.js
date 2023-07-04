@@ -107,9 +107,9 @@ const navegação = () => {
     show = !show
 
     if (show) {
-        nav.style.marginTop = '13vh'
+        nav.style.marginTop = '75px'
     } else {
-        nav.style.marginTop = '-100vh'
+        nav.style.marginTop = '-1000px'
     }
 }
 
@@ -117,7 +117,7 @@ btn.addEventListener('click', navegação)
 
 const mudouTamanho = () => {
     if (window.innerWidth <= 900) {
-        nav.style.marginTop = '-100vh'
+        nav.style.marginTop = '-1000px'
     } else {
         nav.style.marginTop = '0vh'
     }
