@@ -69,8 +69,8 @@ inst.map((el, chave) => {
 
     el.addEventListener("mouseover",() => {
         const entrar = () => {
-            if (el.src.match("img/githubWhite.webp") && chave == 2) {
-                el.src = "img/githubBlack.webp"
+            if (el.src.match("img/githubBlack.webp") && chave == 2) {
+                el.src = "img/githubColor.webp"
                 console.log("laranja")
             }
         }
@@ -80,9 +80,31 @@ inst.map((el, chave) => {
 
     el.addEventListener("mouseout",() => {
         const sair = () => {
-            if (el.src.match("img/githubBlack.webp") && chave ==2) {
-                el.src = "img/githubWhite.webp";
+            if (el.src.match("img/githubColor.webp") && chave ==2) {
+                el.src = "img/githubBlack.webp";
                 console.log("amarelo")
+            }
+        }
+
+        sair()
+    })
+
+    el.addEventListener("mouseover",() => {
+        const entrar = () => {
+            if (el.src.match("img/twitterBlack.webp") && chave == 3) {
+                el.src = "img/twitterColor.webp"
+                console.log("pink")
+            }
+        }
+
+    entrar()
+    })
+
+    el.addEventListener("mouseout",() => {
+        const sair = () => {
+            if (el.src.match("img/twitterColor.webp") && chave ==3) {
+                el.src = "img/twitterBlack.webp";
+                console.log("purple")
             }
         }
 
