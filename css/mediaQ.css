@@ -51,19 +51,8 @@
 }
 
 @media  (max-width: 900px) {
-
-    #header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px 15px;
-        background-color: var(--cor-1);
-        height: 70px;
-        width: 100%;
-    }
-
     #navegação_header {
-        margin-top: -100vh;
+        margin-top: -1000px;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -74,7 +63,13 @@
         width: 100%;
         transition: .2s;
         z-index: 1;
-        background-color: beige; 
+        background-color: #eff3f3; 
+    }
+
+    .linkHeader {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid black;
     }
 
     #btnMenu {
@@ -132,17 +127,29 @@
 
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
 
     #navegação_header {
-        margin-top: -100vh;
+        margin-top: -1000px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
         display: flex;
         flex-direction: column;
         gap: 0;
         padding: 0;
+        width: 100%;
         transition: .2s;
         z-index: 1;
-        background-color: beige;
+        background-color: #eff3f3; 
+    }
+
+    
+
+    .linkHeader {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid black;
     }
 
     #btnMenu {
