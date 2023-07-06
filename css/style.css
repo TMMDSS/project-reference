@@ -165,7 +165,10 @@
     display: grid;
     grid-template-areas: 
     "article aside"
-    "article2  . ";
+    "article2  . "
+    "article3 ."
+    "article4 ."
+    "article5 .";
     width: 100%;
     height: auto;
     padding: 25px 0px;
@@ -244,6 +247,59 @@
     margin-top: 10px;
 }
 
+#artThree {
+    grid-area: article3;
+    width: 100%;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 45px auto;
+}
+
+#artThree h2{
+    font-family: var(--fonteTwo);
+    font-size: 32px;
+}
+
+#artThree p {
+    text-indent: 15px;
+    margin-top: 10px;
+}
+
+#artFour {
+    grid-area: article4;
+    width: 100%;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 45px auto;
+}
+
+#artFour h2{
+    font-family: var(--fonteTwo);
+    font-size: 32px;
+}
+
+#artFour p {
+    text-indent: 15px;
+    margin-top: 10px;
+}
+
+#artFive {
+    grid-area: article5;
+    width: 100%;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 45px auto;
+}
+
+#artFive h2{
+    font-family: var(--fonteTwo);
+    font-size: 32px;
+}
+
+#artFive p {
+    text-indent: 15px;
+    margin-top: 10px;
+}
 /* A Q U I  C O M E Ç A  O  F O O T E R */
 
 #footer {
