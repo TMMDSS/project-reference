@@ -171,3 +171,24 @@ const mudouTamanho = () => {
 window.addEventListener("resize", mudouTamanho)
 
 // verificar se o btn esta ativado no resize
+
+
+// A Q U I  C O M E Ç A  O  N A V  F I X O
+
+window.onscroll = function() {scrollTop()}
+
+var lista = document.getElementById("lista")
+const main = document.querySelector('main')
+
+var sticky = lista.offsetTop;
+
+
+function scrollTop() {
+    
+    if (window.scrollY > sticky) {
+        lista.classList.add("sticky")
+        
+    } else {
+        lista.classList.remove("sticky")
+    }
+}
