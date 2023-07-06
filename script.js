@@ -192,3 +192,19 @@ function scrollTop() {
         lista.classList.remove("sticky")
     }
 }
+
+// A L T E R A Ç Ã O  D A  L I S T A 
+
+const equipe = document.querySelector(".A")
+
+const alter = () => {
+    if (window.innerWidth < 500) {
+        equipe.style.fontSize = "10px"
+        console.log("abacaxi")
+    } else if (window.innerWidth > 500) {
+        equipe.style.fontSize = "16px"
+        console.log("morango")
+    }
+}
+
+alter()
