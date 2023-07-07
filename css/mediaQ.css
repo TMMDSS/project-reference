@@ -121,6 +121,7 @@
         grid-area: aside;
         display: flex;
         flex-direction: row;
+        align-item: center;
         gap: 5px;
         width: 100%;
         border-left: 0px;
@@ -247,6 +248,7 @@
         grid-area: aside;
         display: flex;
         flex-direction: row;
+        align-item: center;
         gap: 5px;
         width: 100%;
         border-left: 0px solid gray;
